@@ -1,0 +1,6 @@
+# ignore js files in the following folders:
+/bin/*
+/client/*
+/client-build/*
+/shared/*
+./README.md

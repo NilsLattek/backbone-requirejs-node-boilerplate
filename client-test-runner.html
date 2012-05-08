@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="test/client/libs/mocha.css"/>
+	<script type="text/javascript" src="client/js/libs/require/require.js"></script>
+  <script type="text/javascript" src="client/js/libs/underscore/underscore.js"></script>
+
+	<script type="text/javascript">
+    
+    var specs = [
+      'models/entry.test'
+      // add additional tests
+    ];
+
+		require.config(
+			{
+				baseUrl:'test/client/',
+				paths:{
+					  'zepto':'../../client/js/libs/zepto/zepto'
+					, 'underscore': '../../client/js/libs/underscore/wrapper'
+					// special wrapper for tests... could not get it to work otherwise
+			    , 'backbone': 'libs/backbone/wrapper'
+			    , 'text': '../../client/js/libs/require/text'
+			    , 'handlebars': '../../client/js/libs/handlebars/wrapper'
+			    // list shared dependencies, else they won't be resolved successfully
+			    , 'entry-validation': '../../shared/js/entry-validation'
+				}
+			}
+		);
+
+		require(['require', 'libs/expect', 'libs/mocha'], function(require){
+			mocha.setup('bdd');
+			
+			require(specs, function(module){
+				mocha.run();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="mocha"></div>
+</body>
+</html>
