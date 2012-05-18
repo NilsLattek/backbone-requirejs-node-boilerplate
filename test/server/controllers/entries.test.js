@@ -20,7 +20,7 @@ describe('EntriesController', function() {
     // db connection
     // create test data
     done();
-  })
+  });
 
   describe('#index()', function() {
     it('should return one entry', function(done) {
@@ -28,10 +28,10 @@ describe('EntriesController', function() {
         var string = JSON.stringify(json);
         expect(string).to.eql('[{"name":"Contribute to open source"}]');
         done();
-      }
+      };
 
       entriesController.index(req, res);
-    })
-  })
+    });
+  });
 
-})
+});

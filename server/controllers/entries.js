@@ -8,7 +8,7 @@ module.exports = {
       }
 
       res.json(entries);
-    })
+    });
     
   },
 
@@ -25,6 +25,6 @@ module.exports = {
 
       // when using a database you would return the inserted object, with the new id
       res.json(req.body);
-    })
+    });
   }
-}
+};

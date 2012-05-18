@@ -1,5 +1,5 @@
 // https://github.com/jrburke/amdefine
-if (typeof define !== 'function') { var define = require('amdefine')(module) }
+if (typeof define !== 'function') { var define = require('amdefine')(module); }
 
 /* require additional modules if needed
 define('entry-validation', ['./other-module.js'], function (other-module) {*/
@@ -11,5 +11,5 @@ define('entry-validation', [], function () {
         return 'Name should not be empty.';
       }
     }
-  }
+  };
 });

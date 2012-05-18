@@ -22,8 +22,7 @@
         },
 
         {
-            name: "main",
-            //exclude: ["zepto"]
+            name: "main"
         }
     ]
 })

@@ -1,10 +1,12 @@
 define([
     'zepto'
+  , 'underscore'
   , 'backbone'
   , 'handlebars'
   , 'text!templates/entry-item.handlebars'
   ], function(
     $
+  , _
   , Backbone
   , Handlebars
   , template

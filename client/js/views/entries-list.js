@@ -1,11 +1,13 @@
 define([
     'zepto'
+  , 'underscore'
   , 'backbone'
   , 'handlebars'
   , 'text!templates/entries-list.handlebars'
   , 'views/entry-item'
   ], function(
     $
+  , _
   , Backbone
   , Handlebars
   , template
@@ -19,7 +21,7 @@ define([
     template: Handlebars.compile(template),
 
     events: {
-      "keypress #new-entry":  "createOnEnter",
+      "keypress #new-entry":  "createOnEnter"
     },
 
     initialize: function() {

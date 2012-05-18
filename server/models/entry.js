@@ -12,7 +12,7 @@ var Entry = function() {
 
 Entry.all = function(callback) {
   if (callback) callback(null, entries);
-}
+};
 
 Entry.add = function(entry, callback) {
   // validate using shared module
@@ -26,6 +26,6 @@ Entry.add = function(entry, callback) {
   entries.push(entry);
 
   if (callback) callback(null);
-}
+};
 
 module.exports = Entry;

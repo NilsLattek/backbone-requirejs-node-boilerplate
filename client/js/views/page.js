@@ -12,6 +12,6 @@ define([
     if (this.onClose){
       this.onClose();
     }
-  }
+  };
   
 });
