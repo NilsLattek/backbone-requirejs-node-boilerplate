@@ -60,7 +60,7 @@ define([
       
       var success = this.collection.create({name: this.input.val()});
       if (!success) {
-        console.log('Validation failed!');
+        alert('Validation failed!');
       }
       this.input.val('');
     }
