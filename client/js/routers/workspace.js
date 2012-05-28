@@ -21,10 +21,19 @@ define([
       this.entries.fetch();
     },
 
+    showView: function(view) {
+      if (this.currentView) {
+        this.currentView.close();
+      }
+
+      this.currentView = view;
+      this.currentView.render();
+      $('body').html(this.currentView.el);
+    },
+
     home : function() {
       var entriesListView = new EntriesListView({ collection: this.entries });
-      entriesListView.render();
-      $('body').html(entriesListView.$el);
+      this.showView(entriesListView);
     }
 
   });
