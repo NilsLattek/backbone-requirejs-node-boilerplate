@@ -2,18 +2,18 @@
     appDir: "../",
     baseUrl: "js/",
     dir: "../../client-build",
+    mainConfigFile: 'main.js',
     optimize: "uglify",
     //optimize: "none",
     //optimizeCss: "standard.keepLines",
     inlineText: true,
     findNestedDependencies: true,
     paths: {
-        'zepto': 'libs/zepto/wrapper'
-      , 'underscore': 'libs/underscore/wrapper'
-      , 'backbone': 'libs/backbone/wrapper'
-      , 'order': 'libs/require/order'
+        'zepto': 'libs/zepto'
+      , 'underscore': 'libs/underscore'
+      , 'backbone': 'libs/backbone'
       , 'text': 'libs/require/text'
-      , 'handlebars': 'libs/handlebars/wrapper'
+      , 'handlebars': 'libs/handlebars'
 
     },
     modules: [

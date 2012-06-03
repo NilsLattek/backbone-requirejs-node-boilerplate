@@ -5,15 +5,10 @@ js/libs/require/require.js
 
 js/main.js
 ----------------
-js/libs/underscore/underscore.js
-js/libs/zepto/zepto.js
-js/libs/require/order.js
-js/libs/backbone/backbone.js
-order!libs/backbone/backbone
-js/libs/backbone/wrapper.js
-js/libs/zepto/wrapper.js
-js/libs/handlebars/handlebars.js
-js/libs/handlebars/wrapper.js
+js/libs/underscore.js
+js/libs/zepto.js
+js/libs/backbone.js
+js/libs/handlebars.js
 js/libs/require/text.js
 text!templates/entries-list.handlebars
 text!templates/entry-item.handlebars
