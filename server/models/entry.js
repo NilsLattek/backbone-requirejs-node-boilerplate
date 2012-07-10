@@ -1,5 +1,5 @@
 // validation logic is shared between client and server
-var entryValidation = require('../../shared/js/entry-validation');
+var entryValidation = require('../../shared/js/entry_validation');
 
 // just for demonstration, normally you would store everything in a database
 var entries = [

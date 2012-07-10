@@ -28,7 +28,7 @@ text!templates/entries-list.handlebars
 text!templates/entry-item.handlebars
 js/views/entry-item.js
 js/views/entries-list.js
-js/entry-validation.js
+js/models/../../../shared/js/entry_validation.js
 js/models/entry.js
 js/collections/entries.js
 js/routers/workspace.js

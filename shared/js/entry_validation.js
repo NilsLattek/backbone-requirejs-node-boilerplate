@@ -2,9 +2,8 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module); }
 
 /* require additional modules if needed
-define('entry-validation', ['./other-module.js'], function (other-module) {*/
-define('entry-validation', [], function () {
-  
+define(['./other-module.js'], function (other-module) {*/
+define([], function () {
   return {
     validate: function(attrs) {
       if (!attrs.name) {

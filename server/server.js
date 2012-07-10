@@ -16,7 +16,8 @@ app.configure(function(){
 
 app.configure('development', function(){
   app.use(express.static(path.join(application_root, '../client')));
-  app.use(express.static(path.join(application_root, '../shared')));
+  // used to load shared modules on the fly during development
+  app.use(express.static(path.join(application_root, '../')));
 
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });

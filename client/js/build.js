@@ -15,7 +15,6 @@
       , 'backbone': 'libs/backbone'
       , 'text': 'libs/require/text'
       , 'handlebars': 'libs/handlebars'
-
     },
     modules: [
         {

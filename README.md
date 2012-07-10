@@ -5,7 +5,7 @@ This example shows how to reuse code between the client and server. A typical us
 Feel free to use it as a basic template for your applications.
 
 ##Project structure
-This backbone application is divided into a couple of AMD modules. A special shared module is used inside the node.js server. 
+This backbone application is divided into a couple of AMD modules. A special shared module is used inside the node.js server.
 It is possible to test all modules using mocha and expect.js. (Examples included)
 
 The Backbone app is inside the 'client' folder.
@@ -25,7 +25,7 @@ Check out this git repository:
     $ git clone git@github.com:NilsLattek/backbone-requirejs-node-boilerplate.git
 
 Remove git history if you want to use this example as a template for your project:
-    
+
     $ cd backbone-requirejs-node-boilerplate
     $ rm -rf .git
 
@@ -48,16 +48,12 @@ Or use nodemon for watching your server files and automatically restart the serv
     $ npm install -g nodemon
     $ nodemon server/server.js
 
-Run serverside and shared modules unittests:
+Run unittests:
 
     $ make test
 
-Run clientside unittests:
-    
-    Open 'client-test-runner.html' in your browser. (TODO: it would be nice to run these along with the serverside tests in one command.) If you add more tests you have to adjust the client-test-runner.html file and list the new test files. This is not the optimal way and should be optimized...
-
 Build (concatenate and minify) everything using r.js:
-    
+
     $ cd bin
     $ ./build.sh
 
@@ -68,7 +64,6 @@ Start production environment (node will use the client-build folder with the min
 
 
 ###Roadmap
-- Use r.js to optimize CSS files
 - Provide a coffeescript version
 - Add strict mode: "use strict";
 

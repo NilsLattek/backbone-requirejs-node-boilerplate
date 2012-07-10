@@ -1,13 +1,13 @@
 define([
     'zepto'
   , 'backbone'
-  , 'entry-validation'
+  , '../../../shared/js/entry_validation'
   ], function(
     $
   , Backbone
   , entryValidation
   ) {
-  
+
   var Entry = Backbone.Model.extend({
 
     validate: function(attrs) {

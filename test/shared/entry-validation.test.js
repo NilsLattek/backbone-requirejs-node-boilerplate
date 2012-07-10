@@ -1,5 +1,5 @@
 var expect = require('expect.js')
-  , entryValidation = require('../../shared/js/entry-validation');
+  , entryValidation = require('../../shared/js/entry_validation');
 
 describe('EntryValidation', function() {
   describe('#validate()', function() {
