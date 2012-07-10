@@ -24,6 +24,7 @@ cd $CURDIR
 
 echo "Removing unnecessary js files from the build directory"
 find $BUILDDIR/js -type f -not \( -name "main.js" -o -name "require.js" \) -delete
+find $BUILDDIR/css -type f -not \( -name "index.css" \) -delete
 
 echo "Removing collections directory"
 rm -rf $BUILDDIR/js/collections
@@ -39,6 +40,10 @@ rm -rf $BUILDDIR/js/templates
 
 echo "Removing views directory"
 rm -rf $BUILDDIR/js/views
+
+echo "Removing css directories"
+rm -rf $BUILDDIR/css/layout
+rm -rf $BUILDDIR/css/views
 
 echo "Moving build.txt to current dir"
 mv $BUILDDIR/build.txt $CURDIR

@@ -5,7 +5,7 @@
     mainConfigFile: 'main.js',
     optimize: "uglify",
     //optimize: "none",
-    //optimizeCss: "standard.keepLines",
+    optimizeCss: "standard", //standard.keepLines
     inlineText: true,
     findNestedDependencies: true,
     paths: {
