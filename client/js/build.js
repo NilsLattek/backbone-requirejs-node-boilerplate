@@ -2,6 +2,7 @@
     appDir: "../",
     baseUrl: "js/",
     dir: "../../client-build",
+    keepBuildDir: true,
     mainConfigFile: 'main.js',
     optimize: "uglify",
     //optimize: "none",
