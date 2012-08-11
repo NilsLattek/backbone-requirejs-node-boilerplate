@@ -3,7 +3,7 @@ var application_root = __dirname
   , path = require("path")
 
   , port = 8000
-  , app = express.createServer()
+  , app = express()
 
   , entriesController = require('./controllers/entries');
 
