@@ -16,9 +16,9 @@ The minified client app is in the 'client-build' folder. This folder gets delete
 ##Usage
 The following steps were tested with the following environment:
 
-    MacOS 10.7.3
-    Node.js 0.6.14
-    npm 1.1.16
+    MacOS 10.8.2
+    Node.js 0.8.14
+    npm 1.1.65
 
 Check out this git repository:
 
