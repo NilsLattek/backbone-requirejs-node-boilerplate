@@ -4,12 +4,12 @@
   , "dependencies": {
       "express": "3.0.x"
     , "eco": "1.1.x"
-    , "amdefine": ">=0.0.2"
+    , "amdefine": ">=0.0.4"
   }
   , "devDependencies": {
-      "mocha": "0.10.x"
-    , "expect.js": "0.1.x"
-    , "requirejs": "2.0.x"
+      "mocha": "1.7.x"
+    , "expect.js": "0.2.x"
+    , "requirejs": "2.1.x"
     , "jsdom": "0.2.x"
   }
 }
